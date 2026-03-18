@@ -1,17 +1,37 @@
-# React + Vite
+# RedaMusic
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Leia o mundo pela música.
 
-Currently, two official plugins are available:
+O RedaMusic é uma plataforma web educacional que usa a música popular como instrumento de leitura crítica da realidade social. A partir da pedagogia de Paulo Freire, a plataforma organiza músicas por eixos temáticos — como saúde, cidadania, meio ambiente, direitos humanos e violência — e oferece análises críticas, contextualizações sociais e sugestões de atividades pedagógicas para cada música.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A proposta é simples: a música que o jovem já ouve no cotidiano fala sobre o mundo dele. O RedaMusic ajuda esse jovem a enxergar isso — e a transformar essa percepção em pensamento crítico e repertório sociocultural.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Como funciona
 
-## Expanding the ESLint configuration
+1. **Selecione um tema** — escolha um eixo temático como saúde, cidadania ou meio ambiente
+2. **Encontre uma música** — veja as músicas relacionadas ao tema escolhido
+3. **Leia o mundo por ela** — explore a análise crítica, os temas abordados e acesse links para ouvir e ler a letra
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# redamusic
+---
+
+## Vínculo institucional
+
+Projeto desenvolvido no âmbito do curso de Pedagogia do **CEDU-UFAL**, vinculado ao projeto de extensão universitária **"Ler o Mundo pela Música: práxis freireana e emancipação sociocultural no Ensino Médio público"**.
+
+- **Coordenador Discente:** Davi dos Santos Cavalcanti
+- **Coordenador Docente:** Prof. Cezar Nonato Bezerra Candeias
+
+---
+
+## Tecnologias
+
+- ReactJS
+- Tailwind CSS
+- React Router
+- Supabase
+
+---
+
+*RedaMusic — CEDU-UFAL · 2026*
