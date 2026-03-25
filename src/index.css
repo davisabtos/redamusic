@@ -1,12 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #1a0533;
+  background-color: #faf8ff;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
 }

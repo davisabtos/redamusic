@@ -1,8 +1,10 @@
 function Footer() {
   return (
-    <footer className="w-full bg-zinc-900 px-6 py-6 text-center">
-      <p className="text-lg font-bold text-white">RedaMusic</p>
-      <p className="text-xs italic text-zinc-400 mt-1">
+    <footer className="w-full bg-bg-dark px-6 py-6 text-center">
+      <p className="text-lg font-bold text-white">
+        Reda<span className="text-accent ">Music</span>
+      </p>
+      <p className="text-xs italic text-primary mt-1">
         Leia o mundo pela música
       </p>
       <p className="text-xs text-zinc-400 mt-3">CEDU-UFAL · 2026</p>

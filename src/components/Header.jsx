@@ -4,12 +4,12 @@ function Header() {
   const navigate = useNavigate();
 
   return (
-    <header className="w-full bg-zinc-900 text-white px-4 py-3 shadow-sm">
+    <header className="w-full bg-bg-dark text-white px-4 py-3 shadow-sm">
       <h1
         onClick={() => navigate("/")}
-        className="text-2xl text-center font-bold cursor-pointer"
+        className="text-2xl text-center font-bold cursor-pointer text-primary shadow-sm"
       >
-        RedaMusic
+        Reda<span className="text-accent">Music</span>
       </h1>
     </header>
   );

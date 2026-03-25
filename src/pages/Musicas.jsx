@@ -58,28 +58,39 @@ function Musicas() {
   }, [slug]);
 
   return (
-    <div className="px-4 py-6">
+    <div className="min-h-screen bg-bg-light px-4 py-6">
       {/* Título */}
+      <div className="relative flex items-center justify-center mb-6">
+        <div className="absolute left-0">
+          <BackButton />
+        </div>
+        <h1 className="text-xl font-bold text-bg-dark">
+          {nomeEixo || "Músicas"}
+        </h1>
+      </div>
 
-        <BackButton />
-        <h1 className="text-xl text-center font-bold mb-6"> Explore as músicas do eixo: {nomeEixo || "Músicas"}</h1>
+      <p className="text-center text-sm text-zinc-500 mb-6">
+        Explore as músicas relacionadas a este tema.
+      </p>
 
       {/* Estados */}
       {carregando ? (
-        <p className="text-center text-zinc-400 mt-10">Carregando músicas...</p>
+        <p className="text-center text-primary mt-10">Carregando músicas...</p>
       ) : musicas.length === 0 ? (
         <p className="text-center text-zinc-400 mt-10">
           Nenhuma música disponível para o eixo "{nomeEixo}" no momento.
         </p>
       ) : (
-        musicas.map((musica) => (
-          <CardMusica
-            key={musica.id}
-            musica={musica}
-            eixos={musica.eixos}
-            onClick={() => setMusicaSelecionada(musica)}
-          />
-        ))
+        <div className="flex flex-col gap-4">
+          {musicas.map((musica) => (
+            <CardMusica
+              key={musica.id}
+              musica={musica}
+              eixos={musica.eixos}
+              onClick={() => setMusicaSelecionada(musica)}
+            />
+          ))}
+        </div>
       )}
 
       <ModalMusica

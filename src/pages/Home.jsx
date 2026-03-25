@@ -47,10 +47,12 @@ function Home() {
 
   return (
     <div>
-      {/* Hero section */}
-      <section className="flex flex-col items-center justify-center text-center py-14 px-6 bg-zinc-900">
-        <h1 className="text-3xl font-bold text-white">Bem-vindo ao RedaMusic</h1>
-        <p className="text-sm italic text-zinc-400 mt-2">
+      {/* Hero */}
+      <section className="flex flex-col items-center justify-center text-center py-14 px-6 bg-bg-dark">
+        <h1 className="text-3xl font-bold text-white">
+          Bem-vindo ao Reda<span className="text-accent">Music</span>
+        </h1>
+        <p className="text-sm italic text-primary mt-2">
           Descubra o que a música que você ouve tem a dizer sobre o mundo
         </p>
         <Button tipo="CTA" clique={() => navigate("/eixos")}>
@@ -58,22 +60,22 @@ function Home() {
         </Button>
       </section>
 
-      {/* Seção Como Funciona */}
-      <section className="w-full px-6 py-8 bg-zinc-50">
-        <h2 className="text-2xl font-bold mb-6">Como Funciona</h2>
+      {/* Como Funciona */}
+      <section className="w-full px-6 py-8 bg-surface-light">
+        <h2 className="text-2xl font-bold mb-6 text-bg-dark">Como Funciona</h2>
         <div className="flex flex-col gap-4">
           {passos.map((item) => {
             const Icone = item.icone
             return (
               <div
                 key={item.num}
-                className="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm"
+                className="flex items-start gap-4 bg-bg-light rounded-xl p-4 shadow-sm"
               >
-                <div className="bg-zinc-100 rounded-full p-2 flex-shrink-0">
-                  <Icone size={20} className="text-zinc-600" />
+                <div className="bg-primary/10 rounded-full p-2 flex-shrink-0">
+                  <Icone size={20} className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-zinc-800">{item.titulo}</h3>
+                  <h3 className="font-bold text-bg-dark">{item.titulo}</h3>
                   <p className="text-sm text-zinc-500 mt-1">{item.desc}</p>
                 </div>
               </div>
@@ -82,9 +84,9 @@ function Home() {
         </div>
       </section>
 
-      {/* Seção Músicas em Destaque */}
-      <section className="w-full py-8">
-        <h2 className="text-2xl font-bold text-center mb-6 px-4">
+      {/* Músicas em Destaque */}
+      <section className="w-full py-8 bg-bg-light">
+        <h2 className="text-2xl font-bold text-center mb-6 px-4 text-bg-dark">
           Músicas em destaque
         </h2>
         <div className="flex gap-3 overflow-x-auto px-4 no-scrollbar">
@@ -101,7 +103,7 @@ function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xs font-bold text-zinc-800 mt-2 line-clamp-2 leading-tight">
+              <h3 className="text-xs font-bold text-bg-dark mt-2 line-clamp-2 leading-tight">
                 {musica.titulo}
               </h3>
               <p className="text-xs text-zinc-500 mt-1 truncate">
@@ -119,12 +121,12 @@ function Home() {
         )}
       </section>
 
-      {/* Seção 4 — Chamada final */}
-      <section className="flex flex-col items-center text-center py-10 px-6 bg-zinc-700">
+      {/* Chamada final */}
+      <section className="flex flex-col items-center text-center py-10 px-6 bg-surface-dark">
         <h2 className="text-2xl font-bold text-white">
           Pronto para ler o mundo pela música?
         </h2>
-        <p className="text-sm italic text-zinc-400 mt-2">
+        <p className="text-sm italic text-primary mt-2">
           Explore todos os eixos temáticos e descubra o que as músicas têm a dizer.
         </p>
         <Button tipo="CTA" clique={() => navigate("/eixos")}>

@@ -1,16 +1,16 @@
 function Button({ children, tipo = "default", clique }) {
   const types = {
-    primary: "bg-blue-500 text-white", // sujeito a mudança
-    secondary: "bg-gray-500 text-white", // sujeito a mudança
-    danger: "bg-red-500 text-white", // sujeito a mudança
-    success: "bg-green-500 text-white", // sujeito a mudança
-    warning: "bg-yellow-500 text-white", // sujeito a mudança
-    info: "bg-gray-300 text-black", // sujeito a mudança
-    default: "bg-gray-500 text-white", // sujeito a mudança
-    CTA: "bg-blue-500 text-white", // sujeito a mudança
+    primary: "bg-primary text-white border-primary",
+    secondary: "bg-surface-dark text-white border-surface-dark",
+    danger: "bg-danger text-white border-danger",
+    success: "bg-success text-white border-success",
+    warning: "bg-warning text-white border-warning",
+    info: "bg-info text-white border-info",
+    default: "bg-surface-dark text-white border-surface-dark",
+    CTA: "bg-accent text-white border-accent",
   };
 
-  const buttonClass = `${types[tipo] || types.default} text-base border-4 border-solid rounded-md px-2 py-1 my-2 flex items-center justify-center`;
+  const buttonClass = `${types[tipo] || types.default} text-base border-2 border-solid rounded-lg px-4 py-2 my-2 flex items-center justify-center font-semibold`;
 
   return (
     <button className={buttonClass} onClick={clique}>
