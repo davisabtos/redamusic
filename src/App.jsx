@@ -5,21 +5,26 @@ import Musicas from "./pages/Musicas";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+import Maintenance from "./pages/Maintenance";
+
 function App() {
   return (
-    <BrowserRouter>
-      <div className="flex flex-col min-h-screen">
-        <Header />
-        <div className="flex-1">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/eixos" element={<Eixos />} />
-            <Route path="/musicas/:slug" element={<Musicas />} />
-          </Routes>
-        </div>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <div className="flex flex-col min-h-screen">
+    //     <Header />
+    //     <div className="flex-1">
+    //       <Routes>
+    //         <Route path="/" element={<Home />} />
+    //         <Route path="/eixos" element={<Eixos />} />
+    //         <Route path="/musicas/:slug" element={<Musicas />} />
+    //       </Routes>
+    //     </div>
+    //     <Footer />
+    //   </div>
+    // </BrowserRouter>
+    <>
+      <Maintenance/>
+    </>
   );
 }
 
